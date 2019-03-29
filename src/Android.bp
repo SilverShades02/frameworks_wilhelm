@@ -17,6 +17,7 @@ cc_library_static {
 
         "-Wall",
         "-Werror",
+        "-Wno-sometimes-uninitialized",
     ],
 }
 
@@ -28,6 +29,7 @@ cc_library_static {
 
     cflags: [
         "-Wno-initializer-overrides",
+        "-Wno-sometimes-uninitialized",
         //"-Wno-missing-field-initializers",
         // optional, see comments in MPH_to.c:
         //"-DUSE_DESIGNATED_INITIALIZERS",
@@ -79,7 +81,7 @@ cc_library_shared {
 
         "-Wno-multichar",
         "-Wno-invalid-offsetof",
-
+        "-Wno-sometimes-uninitialized",
         "-Wall",
         "-Wextra",
         "-Wno-unused-parameter",
@@ -258,6 +260,7 @@ cc_library_shared {
 
         "-Wall",
         "-Werror",
+        "-Wno-sometimes-uninitialized",
     ],
     shared_libs: [
         "libwilhelm",
@@ -287,6 +290,7 @@ cc_library_shared {
 
         "-Wall",
         "-Werror",
+        "-Wno-sometimes-uninitialized",
     ],
     shared_libs: [
         "libwilhelm",
